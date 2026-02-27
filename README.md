@@ -8,4 +8,7 @@ Mobile-first flashcard app for interview preparation for the Strategic Sourcing 
 - Mobile-optimized "Discord Dark Mode" UI.
 
 ## GitHub Pages
-The app is hosted via GitHub Pages. Link provided upon deployment.
+The app is hosted at: https://memefather.github.io/Flashcard-app/
+
+---
+*Created: 2026-02-27T10:08:00Z*
