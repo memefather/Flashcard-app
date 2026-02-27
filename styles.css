@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #313338; /* Discord Dark */
+  color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: #5865f2; /* Discord Blurple */
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #b5bac1;
+  margin: 4px 0 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 0; /* Allow flex child to shrink */
+}
+
+.card {
+  flex: 1;
+  background-color: #2b2d31;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border: 1px solid #3f4147;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.1s;
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.card-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#front {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #4f545c;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.answer-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #248046; /* Success Green */
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+#answer-text {
+  color: #dbdee1;
+  font-weight: 400;
+}
+
+.card-index {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #949ba4;
+  background: rgba(0,0,0,0.2);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+  flex-shrink: 0;
+}
+
+button {
+  background-color: #4e5058;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:active {
+  background-color: #6d6f78;
+}
+
+#flip {
+  background-color: #5865f2;
+  flex: 2;
+}
+
+#flip:active {
+  background-color: #4752c4;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  color: #949ba4;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
